@@ -106,13 +106,13 @@ footer {
 /* Slider */
 .captionfoto {
   position: absolute;
-  max-width: 8vw;
   text-align: left;
   z-index: 4;
   text-transform: uppercase;
   font-size: 9vw;
   color: white;
-  top: 20%;
+  line-height: 100%;
+  top: 25%;
   left: 10%;
   text-shadow: 1px 1px 2px black; }
 
@@ -120,7 +120,7 @@ footer {
   position: absolute;
   z-index: 4;
   font-weight: 600;
-  top: 70%;
+  bottom: 20%;
   left: 10%;
   padding: 5px 10px 5px 10px;
   width: fit-content;
@@ -138,9 +138,15 @@ footer {
     border-color: black;
     color: white; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+  .captionfoto {
+    line-height: 10vw; }
   .botonSlider {
     font-size: 1rem; } }
+
+@media only screen and (max-width: 380px) {
+  .botonSlider {
+    max-width: 100%; } }
 
 .carousel-item img {
   max-height: 780px; }
