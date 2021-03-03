@@ -1,0 +1,5 @@
+@mixin titulos ($size, $separacion){
+    font-weight: $size;
+    border-bottom: 1px solid black;
+    padding-bottom: $separacion;
+}
