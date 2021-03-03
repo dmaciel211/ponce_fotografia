@@ -1,5 +1,8 @@
 @mixin titulos ($size, $separacion){
+    font-family: 'Montserrat';
     font-weight: $size;
     border-bottom: 1px solid black;
     padding-bottom: $separacion;
+    margin-top: 1.5rem;
 }
+

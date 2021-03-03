@@ -1,12 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;800;900&display=swap");
 .sesion a img {
   border: solid 1px black;
   -webkit-box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 0.5rem;
-  margin: 1rem 2rem 2rem 1rem;
+  margin: 1rem 1rem 1rem 0rem;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: 1s ease-in-out;
@@ -27,8 +28,20 @@
 
 /* Estilo General*/
 body {
-  font-family: 'Raleway';
-  margin-left: 0%; }
+  font-family: 'Raleway'; }
+
+.tituloPagina {
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat'; }
+
+h2 {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+  margin-top: 1.5rem; }
 
 /* Menú */
 .nav_menu li {
@@ -90,7 +103,7 @@ footer {
   display: flex;
   flex: column wrap;
   width: 10px;
-  margin-left: 10px;
+  margin-left: 0px;
   z-index: 3; }
   .rrss div a img {
     max-width: 30px;
@@ -106,47 +119,46 @@ footer {
 /* Slider */
 .captionfoto {
   position: absolute;
+  font-family: 'Montserrat';
   text-align: left;
   z-index: 4;
   text-transform: uppercase;
-  font-size: 9vw;
+  font-size: 8vw;
   color: white;
-  line-height: 100%;
   top: 25%;
   left: 10%;
-  text-shadow: 1px 1px 2px black; }
+  text-shadow: 1px 1px 2px black;
+  line-height: normal; }
 
 .botonSlider {
   position: absolute;
-  z-index: 4;
+  z-index: 5;
   font-weight: 600;
   bottom: 20%;
   left: 10%;
   padding: 5px 10px 5px 10px;
   width: fit-content;
-  font-size: x-large;
+  font-size: large;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 black;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
   border-radius: 1%;
-  max-width: 40vw;
-  margin-top: 10px; }
+  margin-top: 10px;
+  max-height: min-content; }
   .botonSlider:hover {
     box-shadow: inset 0 100px 0 0 black;
     border-color: black;
     color: white; }
 
-@media only screen and (max-width: 900px) {
-  .captionfoto {
-    line-height: 10vw; }
+@media only screen and (min-width: 800px) {
   .botonSlider {
-    font-size: 1rem; } }
+    font-size: xx-large; } }
 
-@media only screen and (max-width: 380px) {
-  .botonSlider {
-    max-width: 100%; } }
+@media only screen and (max-width: 1440) {
+  .captionFoto {
+    font-size: 10vw; } }
 
 .carousel-item img {
   max-height: 780px; }
@@ -158,16 +170,21 @@ footer {
   justify-self: center;
   justify-items: center;
   justify-content: center;
-  margin-top: 1rem;
   margin: 0px;
   background-color: #343a40; }
   .main_servicios h2 {
-    text-transform: uppercase;
-    margin-bottom: 3rem; }
+    font-family: 'Montserrat';
+    font-weight: 300;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    color: white;
+    padding-top: 10px;
+    border-color: white; }
   .main_servicios__cards {
     display: flex;
     flex-flow: row wrap;
-    margin: 5rem  0px;
+    margin: 0 1rem 1rem 1 1rem;
     width: 100%;
     justify-content: space-evenly; }
     .main_servicios__cards__card {
@@ -220,7 +237,7 @@ footer {
       border: 10px solid black;
       margin-left: 5vw; }
   .rrss {
-    margin-left: 4px; }
+    margin-left: 2px; }
   .volver p {
     display: none; } }
 
@@ -233,7 +250,60 @@ footer {
   overflow: hidden; }
 
 /* Galería */
-h2 {
-  font-weight: 300;
-  border-bottom: 1px solid black;
-  padding-bottom: 0.5rem; }
+/* Servicios */
+.idea {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .idea div {
+    text-align: center; }
+    .idea div p {
+      text-align: center;
+      font-size: 1.5rem; }
+    .idea div a {
+      font-size: 1.1rem;
+      background-color: black;
+      border-color: black !important;
+      color: white; }
+      .idea div a:hover {
+        background-color: white;
+        color: black; }
+
+.artistica {
+  background-image: url(../img/galeria/ninfas/pan/ninfas_pan3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  filter: grayscale(10%);
+  justify-content: flex-end; }
+  .artistica div {
+    padding-top: 130px; }
+    .artistica div h2 {
+      color: white;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+      border-bottom: 1px solid white;
+      font-weight: 400; }
+    .artistica div p {
+      color: white;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+      font-weight: 600; }
+
+.social {
+  background-image: url(../img/servicios/recital.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  filter: grayscale(30%);
+  justify-content: flex-start; }
+  .social div {
+    padding-top: 130px; }
+    .social div h2 {
+      color: white;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+      font-weight: 400;
+      border-bottom: 1px solid white; }
+    .social div p {
+      color: white;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+      font-weight: 600; }
