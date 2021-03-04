@@ -27,3 +27,25 @@
     }
 }
 
+%servicios{
+    
+
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    position: relative;
+    top: 0;
+    transition: top ease .5s;
+    &:hover{
+
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+}
+}
+
+
+%bounceup{
+    transform: translateY(-4px);
+    transition: all 0.1s ease;
+}

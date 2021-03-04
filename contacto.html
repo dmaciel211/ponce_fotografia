@@ -1,91 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Página de contacto del estudio fotográfico de Leandro Currao Ponce. Producciones artísticas, sociales y de productos.">
-        <meta name="keywords" content="fotógrafo, fotografo, fotografía, fotografia, foto, estudio, arte, modelaje, producto, retrato, cámara, eventos, sociales, recitales">
-        <title>"Inicio - Ponce Fotografía"</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-            <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="css/estilos.css">
-    </head>
-    
-    <body>
-        <header class="container-fluid sticky-top">
-            <div class="row">
-                <nav class="col navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html"><img src="img/logo/logo.png" class="logo_img" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-    
-                            <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-end nav_menu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="bio.html">Bio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                                </li>
-    
-                                <li class="nav-item">
-                                    <a class="nav-link" href="servicios.html">Servicios</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">contacto</a>
-                                </li>
-                            </ul>
-                        </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Página de contacto del estudio fotográfico de Leandro Currao Ponce. Producciones artísticas, sociales y de productos.">
+    <meta name="keywords"
+        content="fotógrafo, fotografo, fotografía, fotografia, foto, estudio, arte, modelaje, producto, retrato, cámara, eventos, sociales, recitales">
+    <title>"Inicio - Ponce Fotografía"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="container-fluid sticky-top">
+        <div class="row">
+            <nav class="col navbar sticky-top navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo/logo.png" class="logo_img" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                        <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-end nav_menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="bio.html">Bio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">contacto</a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-            </div>
-        </header>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <main>
-        <h1 class="tituloPagina">Contacto</h1>
-        <section>
-            <div class="paginaContacto">
-                <form action="" method="get" id="formularioDeContacto">
-                    <label class="labelsFormulario" for="nombre">Nombre y apellido</label>
-                    <input class="labelsFormulario" type="text" name="nombre" id="nombre">
-                    <label class="labelsFormulario" for="email">E-mail</label>
-                    <input class="labelsFormulario" type="email" name="email" placeholder="nombre@gmail.com" id="email" required>
-                    <label class="labelsFormulario" for="lista_asunto">Asunto</label>
-                    <select class="labelsFormulario" name="lista_asunto" id="lista_asunto" >
-                        <option value="sociales">Sociales</option>
-                        <option value="book">Books</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                    <fieldset>
-                        <legend class="labelsFormulario">¿Cómo nos conociste?</legend>
-                        <input type="radio" name="contacto" value="busqueda">Búsqueda online
-                        <input type="radio" name="contacto" value="rrss">Redes Sociales
-                        <input type="radio" name="contacto" value="anuncios">Anuncios
-                        <input type="radio" name="contacto" value="recomendación">Por recomendación
-                        <input type="radio" name="contacto" value="otros">Otros
-                        <input type="text" name="otros">
-                    </fieldset>
-                    <label class="labelsFormulario"  for="consulta">Consulta</label>        
-                    <textarea name="consulta" id="consulta" cols="30" rows="10" required></textarea>
-                    <div class="condiciones">
-                    <p class="labelsFormulario"> Acepta recibir novedades por e-mail</p> 
-                    <input type="checkbox" name="pushmail" id="pushmail" value="1" checked>
-                    </div>
-                    <div class="botonera">
-                    <input type="submit" value="Enviar formulario"/>
-                    <input type="reset" value="Limpiar formulario"/>
-                    </div>
-                </form>
-                <img src="https://via.placeholder.com/500x500" alt="prueba">
+
+        <section class="container-fluid">
+            <div class="row">
+                <h1 class="tituloPagina">Contacto</h1>
+              
+                <div class="formulario col-md-6 col-sm12">
+
+                    <form action="" method="get" id="formularioDeContacto">
+                        <label class="labelsFormulario" for="nombre">Nombre y apellido</label>
+                        <input class="labelsFormulario" type="text" name="nombre" id="nombre">
+                        <label class="labelsFormulario" for="email">E-mail</label>
+                        <input class="labelsFormulario" type="email" name="email" placeholder="nombre@gmail.com"
+                            id="email" required>
+                        <label class="labelsFormulario" for="lista_asunto">Asunto</label>
+                        <select class="labelsFormulario" name="lista_asunto" id="lista_asunto">
+                            <option value="sociales">Sociales</option>
+                            <option value="book">Books</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <fieldset>
+                            <legend class="labelsFormulario">¿Cómo nos conociste?</legend>
+                            <input type="radio" name="contacto" value="busqueda">Búsqueda online
+                            <input type="radio" name="contacto" value="rrss">Redes Sociales
+                            <input type="radio" name="contacto" value="anuncios">Anuncios
+                            <input type="radio" name="contacto" value="recomendación">Por recomendación
+                            <input type="radio" name="contacto" value="otros">Otros
+                            <input type="text" name="otros">
+                        </fieldset>
+                        <label class="labelsFormulario" for="consulta">Consulta</label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10" required></textarea>
+                        <div class="condiciones">
+                            <p class="labelsFormulario"> Acepta recibir novedades por e-mail</p>
+                            <input type="checkbox" name="pushmail" id="pushmail" value="1" checked>
+                        </div>
+                        <div class="botonera">
+                            <input type="submit" value="Enviar formulario" />
+                            <input type="reset" value="Limpiar formulario" />
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img class="img-fluid fotoContacto" src="img/contacto/photoroll.jpg" alt="Rollo de Fotos">
+                </div>
             </div>
+
+
         </section>
     </main>
 
@@ -102,7 +115,12 @@
             <P>Volver al Inicio</P>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

@@ -20,6 +20,22 @@
     filter: grayscale(0);
     top: -10px; }
 
+.artistica, .social {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  position: relative;
+  top: 0;
+  transition: top ease .5s; }
+  .artistica:hover, .social:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+
+.nav_menu a:hover, .sesion {
+  transform: translateY(-4px);
+  transition: all 0.1s ease; }
+
 /* Hoja de estilo*/
 * {
   margin: 0;
@@ -28,13 +44,17 @@
 
 /* Estilo General*/
 body {
-  font-family: 'Raleway'; }
+  font-family: 'Raleway';
+  overflow-x: hidden;
+  background-color: #e4e6eb; }
 
 .tituloPagina {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 4rem;
   text-transform: uppercase;
-  font-family: 'Montserrat'; }
+  font-family: 'Montserrat';
+  border-bottom: 5px groove #3a3b3c;
+  padding: 0px 1px 0px 1px; }
 
 h2 {
   font-family: 'Montserrat';
@@ -44,12 +64,16 @@ h2 {
   margin-top: 1.5rem; }
 
 /* Menú */
+.row > * {
+  padding: 0%; }
+
 .nav_menu li {
   padding: 0 1.5rem 0 1.5rem; }
 
 header {
   box-shadow: 0px 1.1px 3.5px 0px rgba(0, 0, 0, 0.75);
-  height: auto; }
+  height: auto;
+  background-color: #18191a; }
 
 header li a {
   font-size: large;
@@ -58,16 +82,20 @@ header li a {
 .logo_img {
   height: 50px; }
 
-.nav_menu a:hover, .sesion a:hover {
-  transform: translateY(-4px);
-  transition: all 0.5s ease; }
+.nav_menu a:hover {
+  border-top: inset 3px #e4e6eb;
+  border-bottom: outset 3px #e4e6eb; }
+
+.nav_menu .nav-item a.nav-link.active {
+  border-top: inset 3px #e4e6eb;
+  border-bottom: outset 3px #e4e6eb; }
 
 /* footer */
 footer {
   display: flex;
   flex-flow: row nowrap;
   height: 6vh;
-  background-color: #343a40;
+  background-color: #18191a;
   margin-top: 2rem;
   justify-content: space-around;
   align-items: center;
@@ -116,6 +144,9 @@ footer {
   top: 110%; }
 
 /* Inicio */
+.main_index {
+  padding: 0%; }
+
 /* Slider */
 .captionfoto {
   position: absolute;
@@ -123,20 +154,20 @@ footer {
   text-align: left;
   z-index: 4;
   text-transform: uppercase;
-  font-size: 8vw;
+  font-size: 9vw;
   color: white;
-  top: 25%;
+  top: 15%;
   left: 10%;
   text-shadow: 1px 1px 2px black;
-  line-height: normal; }
+  line-height: normal;
+  font-weight: 600; }
 
 .botonSlider {
   position: absolute;
   z-index: 5;
   font-weight: 600;
-  bottom: 20%;
+  bottom: 30%;
   left: 10%;
-  padding: 5px 10px 5px 10px;
   width: fit-content;
   font-size: large;
   cursor: pointer;
@@ -145,8 +176,7 @@ footer {
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
   border-radius: 1%;
-  margin-top: 10px;
-  max-height: min-content; }
+  margin-top: 10px; }
   .botonSlider:hover {
     box-shadow: inset 0 100px 0 0 black;
     border-color: black;
@@ -160,8 +190,12 @@ footer {
   .captionFoto {
     font-size: 10vw; } }
 
+.no-padding {
+  padding: 0px; }
+
 .carousel-item img {
-  max-height: 780px; }
+  max-height: 1000px;
+  transform: scaleX(-1); }
 
 /* Tarjetas */
 .main_servicios {
@@ -170,8 +204,12 @@ footer {
   justify-self: center;
   justify-items: center;
   justify-content: center;
+  top: -15px;
   margin: 0px;
-  background-color: #343a40; }
+  background-color: #3a3b3c;
+  -webkit-box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75); }
   .main_servicios h2 {
     font-family: 'Montserrat';
     font-weight: 300;
@@ -179,7 +217,7 @@ footer {
     padding-bottom: 0.5rem;
     margin-top: 1.5rem;
     color: white;
-    padding-top: 10px;
+    padding-top: 2rem;
     border-color: white; }
   .main_servicios__cards {
     display: flex;
@@ -188,10 +226,13 @@ footer {
     width: 100%;
     justify-content: space-evenly; }
     .main_servicios__cards__card {
-      margin: 3vw; }
+      margin: 3vw;
+      -webkit-box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75); }
       .main_servicios__cards__card__cuerpo__a {
         background-color: black;
-        border-color: black !important; }
+        border-color: black; }
         .main_servicios__cards__card__cuerpo__a:hover {
           background-color: white;
           color: black; }
@@ -200,21 +241,18 @@ footer {
 .presentacion {
   display: flex;
   flex-flow: row;
-  margin-left: 5%;
-  max-width: 90%;
+  max-width: 100%;
   text-align: left;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 5rem; }
+  margin-top: 1rem; }
   .presentacion__texto {
     max-width: 30%;
     margin-left: 1vw; }
   .presentacion img {
     justify-self: flex-end;
     max-height: 350px;
-    height: 350px;
-    border: 10px solid black;
-    margin-left: 5vw; }
+    border: 10px solid black; }
 
 @media only screen and (max-width: 1024px) {
   .main_servicios__cards__card {
@@ -223,31 +261,26 @@ footer {
     display: flex;
     flex-flow: column;
     margin-left: 5%;
-    max-width: 90%;
+    margin-bottom: 10px;
     text-align: left;
     justify-content: space-evenly;
-    align-items: center;
-    margin-top: 5rem; }
+    align-items: center; }
     .presentacion__texto {
-      max-width: 100%;
-      margin-left: 1vw; }
+      max-width: 100%; }
     .presentacion img {
       justify-self: flex-end;
       height: 50%;
-      border: 10px solid black;
-      margin-left: 5vw; }
+      border: 10px solid black; }
   .rrss {
     margin-left: 2px; }
   .volver p {
     display: none; } }
 
 /* Bio */
-.footer_bio {
-  height: 10vw; }
-
 .fotoPerfil {
-  padding: 10px;
-  overflow: hidden; }
+  padding: 0px;
+  max-height: 576px;
+  max-width: 852px; }
 
 /* Galería */
 /* Servicios */
@@ -274,10 +307,9 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
-  filter: grayscale(10%);
   justify-content: flex-end; }
   .artistica div {
-    padding-top: 130px; }
+    padding: 130px 20px 0px 20px; }
     .artistica div h2 {
       color: white;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -294,10 +326,9 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
-  filter: grayscale(30%);
   justify-content: flex-start; }
   .social div {
-    padding-top: 130px; }
+    padding: 130px 20px 0px 20px; }
     .social div h2 {
       color: white;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -307,3 +338,7 @@ footer {
       color: white;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
       font-weight: 600; }
+
+/* Contacto */
+.fotoContacto {
+  height: 300px; }
