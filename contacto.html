@@ -54,56 +54,94 @@
 
     <main>
 
-        <section class="container-fluid">
+        <section class="container-fluid main-contacto">
             <div class="row">
                 <h1 class="tituloPagina">Contacto</h1>
-              
-                <div class="formulario col-md-6 col-sm12">
+                <div col-md-6 col-xs-12>
 
-                    <form action="" method="get" id="formularioDeContacto">
-                        <label class="labelsFormulario" for="nombre">Nombre y apellido</label>
-                        <input class="labelsFormulario" type="text" name="nombre" id="nombre">
-                        <label class="labelsFormulario" for="email">E-mail</label>
-                        <input class="labelsFormulario" type="email" name="email" placeholder="nombre@gmail.com"
-                            id="email" required>
-                        <label class="labelsFormulario" for="lista_asunto">Asunto</label>
-                        <select class="labelsFormulario" name="lista_asunto" id="lista_asunto">
-                            <option value="sociales">Sociales</option>
-                            <option value="book">Books</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                        <fieldset>
-                            <legend class="labelsFormulario">¿Cómo nos conociste?</legend>
-                            <input type="radio" name="contacto" value="busqueda">Búsqueda online
-                            <input type="radio" name="contacto" value="rrss">Redes Sociales
-                            <input type="radio" name="contacto" value="anuncios">Anuncios
-                            <input type="radio" name="contacto" value="recomendación">Por recomendación
-                            <input type="radio" name="contacto" value="otros">Otros
-                            <input type="text" name="otros">
-                        </fieldset>
-                        <label class="labelsFormulario" for="consulta">Consulta</label>
-                        <textarea name="consulta" id="consulta" cols="30" rows="10" required></textarea>
-                        <div class="condiciones">
-                            <p class="labelsFormulario"> Acepta recibir novedades por e-mail</p>
-                            <input type="checkbox" name="pushmail" id="pushmail" value="1" checked>
+
+                    <p class="bajada">Podés encontrarme por acá.</p>
+
+                    <div class="datos-contacto container-fluid">
+
+
+                        <div class="row">
+                            <div class="datos-col-1 col-md-6 col-xs-12">
+                            <h3>Dirección</h3>
+                            <p>Humboldt 269, Ramos Mejía, Prov. de Buenos Aires</p>
+
+                            <h3>Email</h3>
+                            <p>leandroponcecurrao@gmail.com</p>
                         </div>
-                        <div class="botonera">
-                            <input type="submit" value="Enviar formulario" />
-                            <input type="reset" value="Limpiar formulario" />
+               
+                        <div class="datos-col-2 col-md-6 xol-xs-12">
+
+
+                        <h3>Teléfono</h3>
+                        +54 911 5555-2131
+
+
+                            <div class="rrss-contacto">
+                        <a href="https://www.facebook.com/profile.php?id=100007986138339"><img
+                                src="img/rrss/facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/leantofly/?hl=en"> <img src="img/rrss/instagram.png"
+                                alt=""></a>
                         </div>
-                    </form>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+
+
+
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <img class="img-fluid fotoContacto" src="img/contacto/photoroll.jpg" alt="Rollo de Fotos">
+
+
+                <div class="row fila-formulario">
+                    <h2 style="text-align: center;">Dejame tu mensaje.</h2>
+                    <div class="formulario col-md-12">
+                                      
+                        <form action="" method="get" id="formularioDeContacto">
+                            <div class="container">
+                                <div class="row form-row-1">
+                                
+                            <input class="labelsFormulario" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input class="labelsFormulario" type="email" name="email" placeholder="Email"
+                                id="email" required>
+                            </div>
+                                <div class="row form-row-2">
+                            <label class="labelsFormulario" for="lista_asunto">Asunto</label>
+                            <select class="labelsFormulario" name="lista_asunto" id="lista_asunto" placeholder="Asunto">
+                                <option value="sociales">Eventos Sociales</option>
+                                <option value="book">Producción Artística</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                            <div class="row form-row-3">
+                            <textarea name="consulta" id="consulta" cols="30" rows="10" required placeholder="Escribí acá tu mensaje"></textarea>
+                        </div>
+                        <div class="row form-row-4">
+                            <div class="botonera">
+                                <input type="submit" value="Enviar formulario" />
+                                <input type="reset" value="Limpiar formulario" />
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    </div>
+                    <div class="col-md-12 mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.5025741077724!2d-58.55578027076548!3d-34.65444289877791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d888cd12e7%3A0xb2b55d44e911b117!2sHumboldt%20269%2C%20B1704GME%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1615937696706!5m2!1sen!2sar" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
-
 
         </section>
     </main>
 
 
-    <footer>
+    <footer style="margin-top: 0px;">
         <div class="rrss_footer">
             <a href="https://www.facebook.com/profile.php?id=100007986138339"><img src="img/rrss/facebook.png"
                     alt=""></a>
