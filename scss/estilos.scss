@@ -201,6 +201,7 @@ padding: 0%;
     width: fit-content;
     font-size: large;
     cursor: pointer;
+    border-color: black;
     box-shadow: inset 0 0 0 0 black;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
@@ -299,6 +300,7 @@ padding: 0%;
             
 
             &__cuerpo {
+                background-color: $background_color;
                 &__a {
                     cursor: pointer;
                     box-shadow: inset 0 0 0 0 black;
@@ -325,6 +327,17 @@ padding: 0%;
 }
 }
 
+@media only screen and (max-width:1800px){
+    .main_servicios__cards{
+        justify-content: space-evenly center;
+    }
+    .main_servicios__cards__card{
+        margin: 3vw 1px 3vw 1px;
+        padding: 0;
+        
+    }
+
+     }
 /* Presentación */
 
 .presentacion {
@@ -399,11 +412,60 @@ padding: 0%;
 
 
 
-    .fotoPerfil{
-        padding: 0px;
-        max-height: 576px;
-        max-width: 852px;
+.fila-bio-1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    div{
+        p{
+            line-height: 3rem;
+            padding-top: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
     }
+
+}
+
+.fila-bio-2{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    div{
+        p{
+            line-height: 3rem;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+}
+
+
+.foto1{
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+.fotoPerfil {
+
+
+
+img{
+    border: 10px solid black;
+
+}
+
+    }
+
+
+    @media only screen and (max-width:900px){
+
+        }
+
+
+    
 
     /* Galería */
 
@@ -461,7 +523,7 @@ padding: 0%;
         p{
             color: white;
             text-shadow: 0 1px 0 rgba(10, 10, 10, 0.4);
-            font-weight: 400;
+            font-weight: 600;
             font-size: 2rem;
          
         }
@@ -542,7 +604,42 @@ padding: 0%;
     }
 }
 
+.camara{
+    width: 400px;
+position: absolute;
+right: 10vw;
+top: 30vh;
+}
 
+
+@media only screen and (max-width:1800px){
+    .camara{
+        right:1vw;
+        }
+    }
+
+    @media only screen and (max-width:1250px){
+        .camara{
+            max-width: 300px;
+            right:1vw;  
+            top: 35vh;
+            }
+        }
+
+        
+    @media only screen and (max-width:560px ){
+        .camara{
+            max-width: 200px;
+            right:1vw;  
+            top: 35vh;
+            }
+        }
+
+        @media only screen and (max-width:480px  ){
+            .camara{
+            visibility: hidden;;
+                }
+            }
 
 
     .fila-formulario{
