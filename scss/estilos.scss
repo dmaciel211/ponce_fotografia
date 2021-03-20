@@ -94,7 +94,7 @@ footer{
     flex-flow: row nowrap;
     height: 6vh;
     background-color:$primary_color;
-    margin-top: 2rem;
+    margin-top: 10px;
     justify-content: space-around;
     align-items: center;
     align-content: center;
@@ -124,10 +124,32 @@ a{
 }
 }
 
-.volver{
+
+
+@media only screen and (max-width:400px){
+    .rrss_footer{
+
+        img{
+        width:7vw;
+        max-width: 30px;
+        padding-left: 4px;
+    }
+               }
+
+         }
+
+
+
+.footer-volver{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    .btn-volver{
+        @extend %animacion-boton;
+}
+
+
+
     p{
         padding-left: 1rem;
     }
@@ -198,24 +220,7 @@ padding: 0%;
     font-weight: 600;
     bottom:30%;
     left: 10%;
-    width: fit-content;
-    font-size: large;
-    cursor: pointer;
-    border-color: black;
-    box-shadow: inset 0 0 0 0 black;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
-    border-radius: 1%;
-    margin-top: 10px;
-
-
-
-    &:hover{
-        box-shadow: inset 0 100px 0 0 black;
-         border-color: black;
-         color: white;
-    }
+    @extend %animacion-boton;
     }
 
 
@@ -301,25 +306,11 @@ padding: 0%;
 
             &__cuerpo {
                 background-color: $background_color;
+                
                 &__a {
-                    cursor: pointer;
-                    box-shadow: inset 0 0 0 0 black;
-                    -webkit-transition: ease-out 0.4s;
-                    -moz-transition: ease-out 0.4s;
-                    transition: ease-out 0.4s;
-                    border-radius: 1%;
-                    margin-top: 10px;
-                    background-color: white;
-                    color: $primary_color;
-                    border-color: black;
-                
-               
-                
-                    &:hover{
-                        box-shadow: inset 0 100px 0 0 black;
-                         border-color: black;
-                         color: white;
-                    }
+                    color: black;
+                    background-color:white;
+                    @extend %animacion-boton;
             }
         }
     }
@@ -410,33 +401,49 @@ padding: 0%;
     /* Bio */
 
 
-
-
 .fila-bio-1{
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding-right: 10px;
     padding-left: 10px;
+    background-color: $secondary_color;
     div{
+
+        position: relative;
+        top: 0px;
+
+        h1{
+        
+            color: white;
+            border-color:white;
+        }
+        
         p{
-            line-height: 3rem;
+            font-size: 1.5rem;
+            font-size: min(17px);
+            line-height: 2.5rem;
             padding-top: 20px;
             padding-left: 50px;
             padding-right: 50px;
+            color: white;
         }
     }
 
 }
 
 .fila-bio-2{
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color:$secondary_color;
     div{
         p{
-            line-height: 3rem;
+            font-size: 1.5rem;
+            font-size: min(17px);
+            line-height: 2.5rem;
             padding-left: 50px;
             padding-right: 50px;
+            color: white;
         }
     }
 
@@ -444,11 +451,11 @@ padding: 0%;
 
 
 .foto1{
-    padding-top: 25px;
     padding-left: 10px;
+
 }
 
-.fotoPerfil {
+/* .fotoPerfil {
 
 
 
@@ -457,12 +464,8 @@ img{
 
 }
 
-    }
+    } */
 
-
-    @media only screen and (max-width:900px){
-
-        }
 
 
     
@@ -474,6 +477,90 @@ img{
     @extend %bounceup;
 }
 
+
+
+.modal {
+    
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 200;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: auto;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content,
+  #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+  
+  .close {
+      margin-top: 10px;
+      z-index: 300;
+    position: sticky;
+    top: 30px;
+    margin-left: 90vw;
+    color: #f1f1f1;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+  }
+  
 
 
 /* Servicios */
@@ -503,7 +590,7 @@ img{
 
 .artistica{
     background-image: url(../img/galeria/ninfas/pan/ninfas_pan3.jpg);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
@@ -532,11 +619,11 @@ img{
 
 .social{
     background-image: url(../img/servicios/recital.jpg);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
-    justify-content: flex-start;
+    justify-content: flex-start;    
     @extend %servicios;
 
 
@@ -677,7 +764,27 @@ top: 30vh;
      }
  }
 
+ .boton-formulario{
+     padding: 2px;
+    font-family: 'Montserrat';
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    background-color:white;
+    @extend %animacion-boton;
     
+    & .btn-primary{
+        background-color: white;
+    }   
+    }
+
+  
+ 
+    
+
+ .modal-backdrop {
+    z-index:1;
+}
 
   
 

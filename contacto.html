@@ -119,8 +119,10 @@
                         </div>
                         <div class="row form-row-4">
                             <div class="botonera">
-                                <input type="submit" value="Enviar formulario" />
-                                <input type="reset" value="Limpiar formulario" />
+                                <button type="submit" class="boton-formulario" value="Enviar mensaje" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                >
+                                Enviar mensaje  </button>
+                                <input type="reset" class="boton-formulario" >                                      </input>
                             </div>
                         </div>
                         </form>
@@ -135,19 +137,36 @@
         </section>
     </main>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Muchas gracias!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         Tu mensaje ha sido registrado, en breve recibirás una respuesta.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <footer style="margin-top: 0px;">
+    <footer class="bottom">
         <div class="rrss_footer">
             <a href="https://www.facebook.com/profile.php?id=100007986138339"><img src="img/rrss/facebook.png"
                     alt=""></a>
             <a href="https://www.instagram.com/leantofly/?hl=en"> <img src="img/rrss/instagram.png" alt=""></a>
         </div>
         <p>Diseño web por DSM ©2021</p>
-        <div class="volver">
-            <a class="btn bg-light" href="#" role="button">^</a>
-            <P>Volver al Inicio</P>
+        <div class="footer-volver">
+            <a class="btn btn-volver bg-light" href="#" role="button">^</a>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
     </script>
