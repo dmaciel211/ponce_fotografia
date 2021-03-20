@@ -32,7 +32,7 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0); }
 
-.nav_menu a:hover, .main_servicios__cards__card:hover, .sesion {
+.nav_menu a:hover, .rrss_footer img:hover, .rrss div a img:hover, .main_servicios__cards__card:hover, .sesion {
   transform: translateY(-4px);
   transition: all 0.1s ease; }
 

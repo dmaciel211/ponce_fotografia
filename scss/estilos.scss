@@ -120,6 +120,9 @@ a{
         width:8vw;
         max-width: 30px;
         padding-left: 4px;
+        &:hover{
+            @extend %bounceup;
+        }
         
 }
 }
@@ -175,6 +178,9 @@ a{
                 min-width: 20px;
                 width: 5vw;
                 padding: 2px;
+                &:hover{
+                    @extend %bounceup;
+                }
             }
         }
     }
