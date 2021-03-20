@@ -293,7 +293,7 @@ padding: 0%;
     &__cards {
         display: flex;
         flex-flow: row wrap;
-        margin: 0 1rem 1rem 1 1rem;
+        margin: 0 2rem 1rem  1rem;
         width: 100%;
         justify-content: space-evenly;
 
@@ -461,24 +461,13 @@ padding: 0%;
 
 }
 
-/* .fotoPerfil {
-
-
-
-img{
-    border: 10px solid black;
-
-}
-
-    } */
-
-
-
     
 
     /* Galería */
 
 .sesion{
+    overflow-x:clip;
+    padding: 1rem;
     @extend %imagenesGaleria;
     @extend %bounceup;
 }

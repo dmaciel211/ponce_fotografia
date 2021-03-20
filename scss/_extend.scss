@@ -1,14 +1,15 @@
 %imagenesGaleria{
 
         img{
+            display: inline-block;
         border: solid 1px black;
         -webkit-box-shadow: 4px 9px 5px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 4px 9px 5px 0px rgba(0,0,0,0.75);
         box-shadow: 4px 9px 5px 0px rgba(0,0,0,0.75);
         
         padding: 0.5rem;
-        margin: 1rem 1rem 1rem 0rem;
-
+        margin: 8px;
+            
         -webkit-filter: grayscale(100%);
 	    filter: grayscale(100%);
 	    -webkit-transition: 1s ease-in-out;
@@ -17,7 +18,7 @@
         top: 0;
         transition: top ease .5s;
         &:hover{
-
+                cursor: pointer;
                 -webkit-filter: grayscale(0);
                 filter: grayscale(0);
                 top: -10px;
