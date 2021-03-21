@@ -8,7 +8,7 @@
   -moz-box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 0.5rem;
-  margin: 8px;
+  margin: 20px 3px 10px 3px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: 1s ease-in-out;
@@ -233,7 +233,7 @@ footer {
   .main_servicios__cards {
     display: flex;
     flex-flow: row wrap;
-    margin: 0 2rem 1rem  1rem;
+    margin: 0;
     width: 100%;
     justify-content: space-evenly; }
     .main_servicios__cards__card {
@@ -334,7 +334,7 @@ footer {
 /* Galería */
 .sesion {
   overflow-x: clip;
-  padding: 1rem; }
+  padding: .8rem; }
 
 .modal {
   display: none;
