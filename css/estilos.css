@@ -262,14 +262,17 @@ footer {
   text-align: left;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  margin-right: 10px; }
   .presentacion__texto {
     max-width: 30%;
     margin-left: 1vw; }
-  .presentacion img {
+  .presentacion__img {
     justify-self: flex-end;
-    max-height: 350px;
-    border: 10px solid black; }
+    max-width: 600px;
+    border: 2px solid black; }
+    .presentacion__img a img {
+      width: 100%; }
 
 @media only screen and (max-width: 1024px) {
   .main_servicios__cards__card {
